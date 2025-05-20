@@ -238,7 +238,7 @@ function download_napcat() {
     else
         log "开始下载NapCat安装包,请稍等..."
         network_test "Github"
-        napcat_download_url="${target_proxy:+${target_proxy}/}https://github.com/NapNeko/NapCatQQ/releases/latest/download/NapCat.Shell.zip"
+        napcat_download_url="${target_proxy:+${target_proxy}/}https://github.com/NapNeko/NapCatQQ/releases/download/v4.7.65/NapCat.Shell.zip"
         
         curl -k -L -# "${napcat_download_url}" -o "${default_file}"
         if [ $? -ne 0 ]; then
